@@ -11,9 +11,9 @@ git push -u origin main
 
 ## WordPress creation via console
 1. RDS: mysql
-   1. standard create
-   2. mysql free tier
-   3. db instance identifier: wordpress_demo1 (use for all name/creds etc just for the demo --this instance won't have real data)
+   - standard create
+   - mysql free tier
+   - db instance identifier: wordpress_demo1 (use for all name/creds etc just for the demo --this instance won't have real data)
 2. ec2: ubuntu20
   1. i-0857b321c764c1a06
   2. `ssh -i "JULY23-CONSOLE.pem" ubuntu@ec2-3-144-177-188.us-east-2.compute.amazonaws.com`
