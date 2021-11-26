@@ -59,13 +59,31 @@ git push -u origin main
   - This is the user that the Apache web server runs as
   - Apache will need to be able to read and write WordPress files in order to serve the website and perform automatic updates.
   - `sudo chown -R www-data:www-data /var/www/wordpress`
+  - Next we’ll run two find commands to set the correct permissions on the WordPress directories and files:
+  - `sudo find /var/www/wordpress/ -type d -exec chmod 750 {}`
+  - `sudo find /var/www/wordpress/ -type f -exec chmod 640 {}`
 
 
+7. WordPress Configuration file: modifications
+  1. keys
+  2. db name settings
+  3. RDS endpoint
+  - `curl -s https://api.wordpress.org/secret-key/1.1/salt/`
+  - copy these keys to a safe location ; you will use them in the confguration file for WordPress
+  - `sudo nano /var/www/wordpress/wp-config.php`
+  - add the keys created with the 'salt' command ;
+  - then modify these directives in the file with the value you are usign for db name etc: wordpressdemo1
+
+  ```
+  define( 'DB_NAME', 'wordpressdemo1' );
+  define( 'DB_USER', 'wordpressdemo1' );
+  define( 'DB_PASSWORD', 'wordpressdemo1' );
+  ```
 
 
-
-
-
+site testing:
+robertc
+%mYsk2C$zl$lM!9d8)
 
 
   5. cd /var/www
