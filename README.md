@@ -81,11 +81,6 @@ git push -u origin main
   ```
 
 
-site testing:
-robertc
-%mYsk2C$zl$lM!9d8)
-
-
   5. cd /var/www
 
   ## Links
