@@ -22,11 +22,7 @@
 
 ### RouteTable
 > A route table contains a set of rules, called routes, that are used to determine where network traffic is directed.
+
 main route table
 : each VPC will come with a "main route table"
-
-- the main route table controls the routing for all subnets that are not explicitly associated with any other route table.
-- a "custom route table" is a route table that you create for your VPC.
-- Each subnet in your VPC must be associated with a route table; the table controls the routing for the subnet.
-- "Destination" The range of IP addresses where you want traffic to go (destination CIDR). For example, an external corporate network with the CIDR 172.16.0.0/12.
 
