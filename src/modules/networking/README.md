@@ -26,3 +26,5 @@
 main route table
 : each VPC will come with a "main route table"
 
+Custom route table
+: a route table that you create for your VPC.
